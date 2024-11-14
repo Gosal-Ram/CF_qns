@@ -1,4 +1,4 @@
-<cfapplication name = "app" sessionmanagement = "yes">
+<!--- <cfapplication name = "app" sessionmanagement = "yes"> --->
 <!DOCTYPE html>
 <html lang="en">
 <head>
