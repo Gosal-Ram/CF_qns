@@ -10,8 +10,7 @@
 <body>
     <cfoutput>
         <div class="d-flex flex-column justify-content-center align-items-center mt-4"> 
-            <h2 class="display-6 mb-4">Admin Page</h2>
-            
+            <h2 class="display-6 mb-4">Editor Page</h2>
             <cfset local.value = createObject("component","component.index")>
             <cfset local.result= local.value.fetchPage()>
             <cfloop query="local.result">
@@ -22,9 +21,7 @@
                     <button class="btn btn-secondary mt-2" id="deleteBtn" onClick="deletePage(#local.result.page_id#)">delete</button>
                 </div>
             </cfloop>
-        
             <a href ="addPage.cfm" class="btn btn-primary" id="addBtn" >add</a>
-            
         </div>
     </cfoutput>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
