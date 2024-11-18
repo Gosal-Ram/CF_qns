@@ -11,13 +11,12 @@
     <cfoutput>
         <div class="d-flex flex-column justify-content-center align-items-center mt-4">
             <h2 class="display-6 mb-4">CMS Edit Page</h2>
-       <h4>#session.editPgName#</h4> 
+            <h4>#session.editPgName#</h4> 
 <!---             <cfdump  var="#session#"> --->
             <form method="POST" id="form-data" action="">
                 <div>
                     <label>Enter Page description</label>
                     <input type ="text" name="pageDesc" class="form-control mt-4" value="#session.editPgDesc#">               
-
                     <input type ="submit" name="submit" value="Submit" class="btn btn-secondary mt-4">
                 </div>
             </form> 
@@ -29,7 +28,7 @@
                 <span class="text-danger">
                     #local.result#
                 </span>
-                <cflocation  url="editPage.cfm">
+                <cflocation  url="admin.cfm">
             </cfif>    
         </div>
     </cfoutput> 
